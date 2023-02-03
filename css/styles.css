@@ -4,6 +4,10 @@
     color: #fff;
 }
 
+img{
+    width: 100%;
+}
+
 body{
     font-family: 'montserrat';
 }
@@ -51,6 +55,12 @@ h2{
 .title-image{
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+
+}
+
+.title-div{
+    position: relative;
 }
 
 #features{
@@ -120,17 +130,6 @@ h2{
     padding: 3% 2%;
 }
 
-@media (max-width:991px) {
-    .title-image{
-        transform: rotate(0);
-    }
-
-    #title{
-        text-align: center;
-    }
-    
-}
-
 #cta{
     background-color: #ff4c68;
     text-align: center;
@@ -156,4 +155,35 @@ h2{
 
 .last-text{
     color: #8f8f8f;
+}
+
+@media (max-width:991px) {
+    .title-image{
+        transform: rotate(0);
+        position: static;
+    }
+
+    #title{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 3rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+
+    .cta-heading{
+        font-size: 3rem;
+    }
+
+    #pricing{
+        padding: 100px 50px;
+    }
+
 }
